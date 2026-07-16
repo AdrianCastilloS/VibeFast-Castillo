@@ -22,9 +22,9 @@ const config = {
   // Identidad del producto
   // -----------------------------------------------------------
   app: {
-    name: "VibeFast",
+    name: "Soporí Upareamé",
     description:
-      "Boilerplate AI-native para founders. Construido para el Curso de Vibecoding Remotto.",
+      "La plataforma oficial del equipo Soporí Uparéame y del proyecto SISA, dedicada al desarrollo de soluciones inteligentes para la gestión del suelo, agua y agricultura de precisión con aplicaciones en la Tierra y Marte.",
     domain: "vibefast.dev", // sin https://, sin www
     locale: "es", // "es" | "en"
     // URL pública: usa NEXT_PUBLIC_APP_URL en .env. En este config solo definimos el default.
@@ -36,9 +36,9 @@ const config = {
   // -----------------------------------------------------------
   brand: {
     // Color primario en HEX. DaisyUI lo aplica como --color-primary via theme.
-    primary: "#7c3aed", // violet-600
+    primary: "#0F766E", 
     // Logo: puede ser texto o ruta a /public/logo.svg
-    logoText: "VibeFast",
+    logoText: "Soporí Upareamé",
     logoSrc: null,
     // Estilo del bordeado global (DaisyUI usa esto para botones, cards)
     radius: "1rem",
@@ -107,36 +107,42 @@ const config = {
       { label: "Docs", href: "/docs" },
     ],
     hero: {
-      eyebrow: "Curso Vibecoding · Remotto × Startup Chihuahua",
-      title: "De 0 a producto AI-native en 11 semanas.",
+      eyebrow: "Equipo Soporí Uparéame · Proyecto SISA",
+      title: "Transformamos datos en decisiones inteligentes.",
       subtitle:
-        "VibeFast es la plantilla del curso: Next.js, Supabase, OpenAI y MCP cableados desde el día 1. Tú extiendes con prompts en Cursor.",
+        "Soporí Upareamé es la plataforma oficial del equipo Soporí Uparéame y del proyecto SISA, dedicada al desarrollo de soluciones inteligentes para la gestión del suelo, agua y agricultura de precisión con aplicaciones en la Tierra y Marte.",
       cta: { label: "Únete al waitlist", href: "#waitlist" },
       ctaSecondary: { label: "Ver docs", href: "/docs" },
     },
     problem: {
-      eyebrow: "El problema",
-      title: "Construir el andamiaje mata tu momentum.",
-      subtitle:
-        "La mayoría de founders se atoran semanas configurando lo mismo antes de tocar su idea real.",
-      items: [
-        {
-          icon: "Timer",
-          title: "Semanas en boilerplate",
-          body: "Auth, base de datos, deploy, emails… configuras lo mismo que todos antes de validar nada.",
-        },
-        {
-          icon: "Puzzle",
-          title: "Parálisis por herramientas",
-          body: "Cada capa tiene 10 opciones. Comparas en vez de construir y pierdes el hilo.",
-        },
-        {
-          icon: "PlugZap",
-          title: "La IA no se integra sola",
-          body: "Structured outputs, tool use, agentes y MCP suenan bien hasta que hay que cablearlos.",
-        },
-      ],
+  eyebrow: "El desafío",
+
+  title: "La agricultura necesita decisiones basadas en datos, no en suposiciones.",
+
+  subtitle:
+    "El monitoreo manual del suelo, agua y ambiente dificulta la toma de decisiones oportunas, incrementando el desperdicio de recursos y reduciendo la productividad.",
+
+  items: [
+    {
+      icon: "Droplets",
+      title: "Uso ineficiente del agua",
+      body:
+        "El riego sin información precisa provoca desperdicio de agua y afecta el desarrollo de los cultivos.",
     },
+    {
+      icon: "Leaf",
+      title: "Condiciones del suelo desconocidas",
+      body:
+        "La falta de monitoreo continuo dificulta detectar problemas antes de que afecten la producción.",
+    },
+    {
+      icon: "Brain",
+      title: "Decisiones sin información",
+      body:
+        "Los productores requieren herramientas que transformen datos en recomendaciones inteligentes y accionables.",
+    },
+  ],
+},
     features: {
       eyebrow: "Lo que ya viene listo",
       title: "Stack completo, una sola decisión por capa.",
