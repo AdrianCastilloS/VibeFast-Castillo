@@ -48,7 +48,7 @@ const config = {
   // Toggles de features — encienden/apagan rutas y componentes
   // -----------------------------------------------------------
   features: {
-    waitlist: true, // Captura emails en landing — Sem 1
+    waitlist: false, // Captura emails en landing — Sem 1
     googleAuth: true, // Login con Google — Sem 2
     emailLogin: false, // Magic link email — opcional
     aiChat: true, // Chat AI en /chat — Sem 3
@@ -58,7 +58,7 @@ const config = {
     rag: false, // RAG con pgvector — opcional
     posthog: false, // Tracking — opcional
     resend: true, // Email — Sem 1+
-    pricing: true, // Muestra la sección de precios en la landing (vitrina; el cobro real es `payments`)
+    pricing: false, // Muestra la sección de precios en la landing (vitrina; el cobro real es `payments`)
     payments: false, // Stripe — opcional, fuera del temario
     hardware: false, // ESP-Claw bridge — Sem 8
   },
@@ -101,183 +101,186 @@ const config = {
   // -----------------------------------------------------------
   landing: {
     nav: [
-      { label: "Características", href: "#features" },
-      { label: "Precios", href: "#pricing" },
-      { label: "Preguntas", href: "#faq" },
-      { label: "Docs", href: "/docs" },
+      { label: "Inicio", href: "#hero" },
+      { label: "Proyecto", href: "#project" },
+      { label: "Equipo", href: "#team" },
+      { label: "Patrocinadores", href: "#sponsors" },
+      { label: "Contacto", href: "#contact" },
     ],
     hero: {
       eyebrow: "Equipo Soporí Uparéame · Proyecto SISA",
-      title: "Transformamos datos en decisiones inteligentes.",
+      title: "Representando a México en el Mars Challenge 2026",
       subtitle:
-        "Soporí Upareamé es la plataforma oficial del equipo Soporí Uparéame y del proyecto SISA, dedicada al desarrollo de soluciones inteligentes para la gestión del suelo, agua y agricultura de precisión con aplicaciones en la Tierra y Marte.",
-      cta: { label: "Únete al waitlist", href: "#waitlist" },
-      ctaSecondary: { label: "Ver docs", href: "/docs" },
+        "Soporí Uparéame desarrolla tecnologías inteligentes para la gestión del agua, suelo y agricultura de precisión, demostrando cómo la innovación puede transformar tanto la exploración espacial como la agricultura en la Tierra.",
+      cta: { label: "Conoce el proyecto", href: "#project" },
+      ctaSecondary: { label: "Nuestro equipo", href: "#team" },
     },
     problem: {
   eyebrow: "El desafío",
 
-  title: "La agricultura necesita decisiones basadas en datos, no en suposiciones.",
+  title: "Gestionar agua y suelo de manera eficiente es uno de los mayores retos para la agricultura y la exploración espacial.",
 
   subtitle:
-    "El monitoreo manual del suelo, agua y ambiente dificulta la toma de decisiones oportunas, incrementando el desperdicio de recursos y reduciendo la productividad.",
+    "La falta de información en tiempo real dificulta tomar decisiones oportunas sobre riego, humedad y condiciones ambientales, provocando desperdicio de recursos y menor productividad.",
 
   items: [
     {
       icon: "Droplets",
       title: "Uso ineficiente del agua",
       body:
-        "El riego sin información precisa provoca desperdicio de agua y afecta el desarrollo de los cultivos.",
+        "El agua es un recurso limitado. Un monitoreo inteligente permite optimizar cada litro utilizado.",
     },
     {
       icon: "Leaf",
-      title: "Condiciones del suelo desconocidas",
+      title: "Monitoreo del suelo",
       body:
-        "La falta de monitoreo continuo dificulta detectar problemas antes de que afecten la producción.",
+        "Conocer continuamente las condiciones del suelo ayuda a prevenir problemas antes de afectar los cultivos.",
     },
     {
       icon: "Brain",
-      title: "Decisiones sin información",
+      title: "Decisiones inteligentes",
       body:
-        "Los productores requieren herramientas que transformen datos en recomendaciones inteligentes y accionables.",
+        "SISA integra sensores e Inteligencia Artificial para transformar datos en recomendaciones útiles para el productor.",
     },
   ],
 },
     features: {
-      eyebrow: "Lo que ya viene listo",
-      title: "Stack completo, una sola decisión por capa.",
-      subtitle: "No pierdes tiempo eligiendo herramientas. Te enfocas en tu producto.",
+      eyebrow: "Nuestra tecnología",
+      title: "SISA integra hardware, software e Inteligencia Artificial en una sola plataforma.",
+      subtitle: "El proyecto combina sensores, automatización y análisis inteligente para optimizar la gestión agrícola en ambientes terrestres y de exploración espacial.",
       items: [
         {
-          icon: "Sparkles",
-          title: "AI nativa",
-          body: "OpenAI con structured outputs, tool use, agentes con LangGraph y MCP. Listo para activar.",
-        },
-        {
-          icon: "Database",
-          title: "Supabase + Auth",
-          body: "Base de datos con RLS, Google Auth y tablas pre-modeladas. No diseñas schema desde cero.",
-        },
-        {
-          icon: "Zap",
-          title: "Deploy en minutos",
-          body: "Vercel + Supabase Cloud. Una URL pública el primer día.",
-        },
-        {
-          icon: "BookOpen",
-          title: "Docs semana a semana",
-          body: "Tutoriales mapeados al temario del curso, con prompts de Cursor listos para copiar.",
-        },
-        {
-          icon: "Mail",
-          title: "Email + analytics",
-          body: "Resend para correos transaccionales y PostHog opcional para tracking.",
-        },
-        {
           icon: "Cpu",
-          title: "Hardware-ready",
-          body: "Conexión MCP al ESP-Claw para el caso de hardware con IA del Módulo 3.",
+          title: "Internet de las Cosas (IoT)",
+          body: "Sensores conectados recopilan información del suelo y del ambiente en tiempo real.",
+        },
+        {
+          icon: "Droplets",
+          title: "Monitoreo del agua",
+          body: "Control inteligente del riego para reducir desperdicios y mejorar la eficiencia hídrica.",
+        },
+        {
+          icon: "Leaf",
+          title: "Agricultura de precisión",
+          body: "Análisis continuo de las condiciones del cultivo para mejorar la toma de decisiones.",
+        },
+        {
+          icon: "Brain",
+          title: "Inteligencia Artificial",
+          body: "Los datos recopilados son procesados para generar recomendaciones que apoyan al usuario.",
+        },
+        {
+          icon: "BarChart3",
+          title: "Visualización de datos",
+          body: "La plataforma presenta información clara mediante gráficos e indicadores en tiempo real.",
+        },
+        {
+          icon: "Rocket",
+          title: "Aplicaciones espaciales",
+          body: "SISA fue desarrollado como una propuesta tecnológica para el Mars Challenge 2026.",
         },
       ],
     },
     faq: {
       eyebrow: "Preguntas frecuentes",
-      title: "Lo que todo founder pregunta antes de arrancar.",
+      title: "Conoce más sobre el proyecto SISA y Soporí Uparéame",
       items: [
         {
-          q: "¿Necesito saber programar?",
-          a: "No. El curso asume founders no técnicos. Construyes describiendo en Cursor; el boilerplate hace el resto.",
+          q: "¿Qué es Soporí Uparéame?",
+          a: "Soporí Uparéame es un equipo multidisciplinario del Instituto Tecnológico de Chihuahua que desarrolla soluciones tecnológicas para resolver desafíos relacionados con la agricultura inteligente y la exploración espacial.",
         },
         {
-          q: "¿Cuánto cuesta correr esto?",
-          a: "Vercel y Supabase tienen tiers gratuitos generosos. OpenAI cobra por uso: con gpt-4o-mini, el costo de un MVP del curso ronda US$5-20.",
+          q: "¿Qué es SISA?",
+          a: "SISA es el acrónimo de Sistema Inteligente de Soporte a la Agricultura. Es una plataforma de software que integra hardware, software e Inteligencia Artificial para optimizar la gestión agrícola en ambientes terrestres y de exploración espacial.",
         },
         {
-          q: "¿Puedo cambiar el stack?",
-          a: "Sí, pero el curso (y las docs) asumen este stack. Cambiar pieza por pieza es posible después del curso.",
+          q: "¿Qué es el Mars Challenge?",
+          a: "Es una competencia internacional donde equipos universitarios desarrollan soluciones tecnológicas para enfrentar los desafíos de futuras misiones a Marte. Soporí Uparéame representará a México en la edición 2026 en Madrid, España.",
         },
         {
-          q: "¿Y si me atoro?",
-          a: "Las docs incluyen una sección de troubleshooting con los 20 errores más comunes. Además hay sesión semanal con el docente.",
+          q: "¿Como puedo colaborar?",
+          a: "Empresas, instituciones y personas pueden colaborar mediante patrocinios, difusión del proyecto o estableciendo alianzas estratégicas que impulsen el desarrollo tecnológico del equipo.",
         },
       ],
     },
     socialProof: {
-      text: "Founders del curso ya lanzaron con este stack",
-      logos: ["Remotto", "Startup Chihuahua", "Next.js", "Supabase", "OpenAI", "Vercel"],
+      text: "Proyecto desarrollado por estudiantes del Instituto Tecnológico de Chihuahua.",
+      logos: ["ITCH","Mars Challenge","SISA","IoT","IA","Agricultura Inteligente",],
     },
     testimonials: {
-      eyebrow: "Prueba social",
-      title: "Founders que ya lanzaron con VibeFast.",
-      subtitle: "Testimonios de cohortes anteriores del curso.",
+      eyebrow: "Nuestros logos",
+      title: "Un proyecto construido con innovación, investigación y trabajo en equipo.",
+      subtitle: "Estos son algunos de los resultados alcanzados por Soporí Uparéame.",
       items: [
         {
           quote:
-            "Pasé de una idea en Notion a un MVP con IA en producción en dos semanas. Nunca había tocado código.",
-          author: "Ana Márquez",
-          role: "Founder · Fisio en casa",
+            "Clasificación a la Final Internacional del Mars Challenge 2026 para representar a México en Madrid.",
+          author: "Mars Challenge",
+          role: "Competencia Internacional",
         },
         {
           quote:
-            "El boilerplate ya traía auth, base de datos y el agente cableados. Solo describí lo que quería en Cursor.",
-          author: "Diego Sáenz",
-          role: "Founder · Tutor IA",
+            "Desarrollo de SISA, una plataforma que integra sensores, Internet de las Cosas e Inteligencia Artificial para optimizar la gestión agrícola.",
+          author: "Proyecto SISA",
+          role: "Innovación Tecnológica",
         },
         {
           quote:
-            "Las docs semana a semana fueron mi mapa. Copiaba el prompt, ajustaba y avanzaba sin atorarme.",
-          author: "Lucía Fernández",
-          role: "Founder · Recetario inteligente",
+            "Equipo multidisciplinario conformado por estudiantes del Instituto Tecnológico de Chihuahua comprometidos con el desarrollo de soluciones de impacto.",
+          author: "Equipo Soporí Uparéam",
+          role: "Instituto Tecnológico de Chihuahua",
         },
       ],
     },
     finalCta: {
-      eyebrow: "Tu turno",
-      title: "Deja de configurar. Empieza a construir.",
+      eyebrow: "Unete a nuestra misión",
+      title: "Ayúdanos a representar a México en el Mars Challenge 2026.",
       subtitle:
-        "Clona la plantilla, edita config.js y ten tu producto AI-native en producción esta semana.",
-      cta: { label: "Únete al waitlist", href: "#waitlist" },
-      ctaSecondary: { label: "Leer las docs", href: "/docs" },
+        "Tu apoyo permitirá que nuestro equipo continúe desarrollando soluciones tecnológicas para la agricultura inteligente y la exploración espacial. Juntos podemos llevar la innovación mexicana al escenario internacional.",
+      cta: { label: "Quiero apoyar al equipo", href: "#contact" },
+      ctaSecondary: { label: "Conocer el proyecto", href: "#project" },
     },
     waitlist: {
-      eyebrow: "Únete primero",
-      title: "Sé de los primeros en saber.",
-      subtitle: "Te avisamos cuando abramos cupos para la siguiente cohorte.",
-      successMessage: "¡Listo! Te avisamos en cuanto haya novedades.",
-      buttonLabel: "Quiero entrar",
-      placeholder: "tu@email.com",
+      eyebrow: "Apoya nuestra misión",
+      title: "Ayúdanos a representar a México en el Mars Challenge 2026.",
+      subtitle: "Estamos recaudando fondos para cubrir los gastos de viaje, hospedaje, inscripción y logística que permitirán a Soporí Uparéame competir en la Final Internacional del Mars Challenge en Madrid, España. Cada aportación nos acerca a demostrar el talento y la innovación mexicana en un escenario mundial.",
+      successMessage: "¡Muchas gracias por tu apoyo! Tu contribución nos acerca un paso más a representar a México.",
+      buttonLabel: "❤️ Apóyanos en GoFundMe",
+      href: "#",
+      placeholder: "Ingresa tu correo para recibir actualizaciones",
     },
     footer: {
-      tagline: "Construido para founders. Por Remotto × Startup Chihuahua.",
+      tagline: "Soporí Uparéame • Representando a México en el Mars Challenge 2026 desde el Instituto Tecnológico de Chihuahua.",
       columns: [
         {
-          title: "Producto",
+          title: "Proyecto",
           links: [
-            { label: "Características", href: "#features" },
-            { label: "Precios", href: "#pricing" },
-            { label: "Preguntas", href: "#faq" },
+            { label: "Inicio", href: "#hero" },
+            { label: "Proyecto", href: "#project" },
+            { label: "Tecnología", href: "#features" },
+            { label: "Preguntas frecuentes", href: "#faq" },
           ],
         },
         {
-          title: "Recursos",
+          title: "Apoyanos",
           links: [
-            { label: "Docs", href: "/docs" },
-            { label: "Quick start", href: "/docs/setup/quick-start" },
-            { label: "Troubleshooting", href: "/docs/troubleshooting/errores-comunes" },
+            { label: "Donar en GoFundMe", href: "#" },
+            { label: "Ser patrocinador", href: "#contact" },
+            { label: "Contacto", href: "#contact" },
           ],
         },
         {
-          title: "Comunidad",
+          title: "Redes sociales",
           links: [
-            { label: "GitHub", href: "https://github.com/arampersand/VibeFast", external: true },
-            { label: "Remotto", href: "https://remotto.com", external: true },
+            { label: "Instagram", href: "https://www.instagram.com/sopori_upareame/", external: true },
+            { label: "GoFundMe", href: "#", external: true },
           ],
         },
       ],
       // Compat: links planos usados en el bar inferior
       links: [
-        { label: "Docs", href: "/docs" },
-        { label: "GitHub", href: "https://github.com/arampersand/VibeFast", external: true },
+        { label: "Instagram", href: "https://www.instagram.com/sopori_upareame/", external: true },
+        { label: "GoFundMe", href: "", external: true },
       ],
     },
   },
