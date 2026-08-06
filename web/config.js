@@ -48,7 +48,7 @@ const config = {
   // Toggles de features — encienden/apagan rutas y componentes
   // -----------------------------------------------------------
   features: {
-    waitlist: false, // Captura emails en landing — Sem 1
+    waitlist: true, // Captura emails en landing — Sem 1
     googleAuth: true, // Login con Google — Sem 2
     emailLogin: false, // Magic link email — opcional
     aiChat: true, // Chat AI en /chat — Sem 3
@@ -264,7 +264,7 @@ const config = {
         {
           title: "Apoyanos",
           links: [
-            { label: "Donar en GoFundMe", href: "#" },
+            { label: "Donar en GoFundMe", href: "https://gofund.me/06c79d285" },
             { label: "Ser patrocinador", href: "#contact" },
             { label: "Contacto", href: "#contact" },
           ],
