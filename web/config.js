@@ -25,7 +25,7 @@ const config = {
     name: "Soporí Upareamé",
     description:
       "La plataforma oficial del equipo Soporí Uparéame y del proyecto SISA, dedicada al desarrollo de soluciones inteligentes para la gestión del suelo, agua y agricultura de precisión con aplicaciones en la Tierra y Marte.",
-    domain: "soporiupareame.org", // sin https://, sin www
+    domain: "vibefast.dev", // sin https://, sin www
     locale: "es", // "es" | "en"
     // URL pública: usa NEXT_PUBLIC_APP_URL en .env. En este config solo definimos el default.
     defaultUrl: "http://localhost:3000",
