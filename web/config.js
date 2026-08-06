@@ -48,7 +48,7 @@ const config = {
   // Toggles de features — encienden/apagan rutas y componentes
   // -----------------------------------------------------------
   features: {
-    waitlist: true, // Captura emails en landing — Sem 1
+    waitlist: false, // Captura emails en landing — Sem 1
     googleAuth: true, // Login con Google — Sem 2
     emailLogin: false, // Magic link email — opcional
     aiChat: true, // Chat AI en /chat — Sem 3
@@ -103,9 +103,9 @@ const config = {
     nav: [
       { label: "Inicio", href: "#hero" },
       { label: "Proyecto", href: "#project" },
-      { label: "Equipo", href: "#team" },
-      { label: "Patrocinadores", href: "#sponsors" },
-      { label: "Contacto", href: "#contact" },
+      { label: "Tecnología", href: "#features" },
+      { label: "Preguntas", href: "#faq" },
+      { label: "❤️ Apóyanos", href: "https://gofund.me/06c79d285" },
     ],
     hero: {
       eyebrow: "Equipo Soporí Uparéame · Proyecto SISA",
@@ -191,7 +191,7 @@ const config = {
         },
         {
           q: "¿Qué es SISA?",
-          a: "SISA es el acrónimo de Sistema Inteligente de Soporte a la Agricultura. Es una plataforma de software que integra hardware, software e Inteligencia Artificial para optimizar la gestión agrícola en ambientes terrestres y de exploración espacial.",
+          a: "SISA es el acrónimo de Sistema Inteligente de Suelo y Agua. Es una plataforma de software que integra hardware, software e Inteligencia Artificial para optimizar la gestión agrícola en ambientes terrestres y de exploración espacial.",
         },
         {
           q: "¿Qué es el Mars Challenge?",
@@ -237,8 +237,8 @@ const config = {
       title: "Ayúdanos a representar a México en el Mars Challenge 2026.",
       subtitle:
         "Tu apoyo permitirá que nuestro equipo continúe desarrollando soluciones tecnológicas para la agricultura inteligente y la exploración espacial. Juntos podemos llevar la innovación mexicana al escenario internacional.",
-      cta: { label: "Quiero apoyar al equipo", href: "#contact" },
-      ctaSecondary: { label: "Conocer el proyecto", href: "#project" },
+      cta: { label: "❤️ Apóyanos en GoFundMe", href: "https://gofund.me/06c79d285" },
+      ctaSecondary: { label: "Conocer SISA", href: "#project" },
     },
     waitlist: {
       eyebrow: "Apoya nuestra misión",
@@ -246,8 +246,7 @@ const config = {
       subtitle: "Estamos recaudando fondos para cubrir los gastos de viaje, hospedaje, inscripción y logística que permitirán a Soporí Uparéame competir en la Final Internacional del Mars Challenge en Madrid, España. Cada aportación nos acerca a demostrar el talento y la innovación mexicana en un escenario mundial.",
       successMessage: "¡Muchas gracias por tu apoyo! Tu contribución nos acerca un paso más a representar a México.",
       buttonLabel: "❤️ Apóyanos en GoFundMe",
-      href: "#",
-      placeholder: "Ingresa tu correo para recibir actualizaciones",
+      href: "https://gofund.me/06c79d285",
     },
     footer: {
       tagline: "Soporí Uparéame • Representando a México en el Mars Challenge 2026 desde el Instituto Tecnológico de Chihuahua.",
@@ -273,14 +272,14 @@ const config = {
           title: "Redes sociales",
           links: [
             { label: "Instagram", href: "https://www.instagram.com/sopori_upareame/", external: true },
-            { label: "GoFundMe", href: "#", external: true },
+            { label: "GoFundMe", href: "https://gofund.me/06c79d285", external: true },
           ],
         },
       ],
       // Compat: links planos usados en el bar inferior
       links: [
         { label: "Instagram", href: "https://www.instagram.com/sopori_upareame/", external: true },
-        { label: "GoFundMe", href: "", external: true },
+        { label: "GoFundMe", href: "https://gofund.me/06c79d285", external: true },
       ],
     },
   },
